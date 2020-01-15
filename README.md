@@ -1,1 +1,3 @@
-# Mr.-Shark4life-About-Me-Page
+This is the About Page for Mr. Shark4life.
+
+Coded and designed by Fnu Milat.
