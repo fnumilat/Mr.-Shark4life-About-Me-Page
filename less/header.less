@@ -5,11 +5,19 @@ header {
     width: 100%;
     margin-bottom: 2%;
 
-    @media @mobile {
+    @media @miniMobile {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
     }
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+
 
 
     .header-section {
@@ -18,10 +26,29 @@ header {
         width: 100%;
         padding-bottom: 1%;
         padding-top: 1%;
-        
-        @media @mobile {
+
+        @media @miniMobile {
+            display: flex;
             flex-direction: column-reverse;
+            width: 100%;
         }
+
+        @media @mobile {
+            display: flex;
+            justify-content: center;
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+
+        @media @tabletLandscape {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+        }
+        
+
 
         h2 {
             width: 100%;
@@ -29,13 +56,34 @@ header {
             margin-top: 12%;
             font-size: 100px;
 
-            @media @mobile {
-                font-size: 50px;
-                margin-left: -1%;
-                margin-top: 3%;
-                margin-bottom: 4%;
+            @media @miniMobile {
+                font-size: 40px;
                 text-align: center;
+                margin-left: 0%;
+                margin-top: 4%;
+                margin-bottom: 10%;
             }
+
+            @media @mobile {
+                width: 100%;
+                margin-left: 0%;
+                font-size: 50px;
+                text-align: center;
+                margin-top: 5%;
+                margin-bottom: 2%;
+            }
+
+            @media @tabletLandscape {
+                width: 100%;
+                margin-left: -4%;
+                margin-top: 12%;
+                font-size: 80px;
+            }
+
+            @media @laptops {
+                font-size: 100px;
+            }
+
 
     
         }
@@ -45,11 +93,25 @@ header {
             border-radius: 300px;
             margin-left: 2%;
 
-            @media @mobile {
-                width: 60%;
-                margin-left: 20%;
-                padding-top: 2%;
+            @media @miniMobile {
+                width: 90%;
+                margin-left: 5%;
+                margin-top: 2%;
             }
+
+            @media @mobile {
+                width: 80%;
+                margin-left: 9.5%;
+                margin-top: 2%;
+            }
+
+            @media @tabletLandscape {
+                width: 30%;
+                border-radius: 300px;
+                margin-left: 2%;
+            }
+
+
         }
     }
 }
