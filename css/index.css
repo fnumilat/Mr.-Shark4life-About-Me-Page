@@ -215,15 +215,16 @@ header .header-section {
 }
 header .header-section h2 {
   width: 100%;
-  margin-left: 8%;
+  margin-left: 0%;
   margin-top: 12%;
   font-size: 100px;
+  text-align: center;
 }
 @media (min-width: 320px) {
   header .header-section h2 {
     font-size: 25px;
     text-align: center;
-    margin-left: -6%;
+    margin-left: 0%;
     margin-top: 5%;
     margin-bottom: 5%;
   }
@@ -231,7 +232,7 @@ header .header-section h2 {
 @media (min-width: 480px) {
   header .header-section h2 {
     width: 100%;
-    margin-left: -5%;
+    margin-left: 0%;
     font-size: 40px;
     text-align: center;
     margin-top: 5%;
@@ -241,15 +242,17 @@ header .header-section h2 {
 @media (min-width: 992px) {
   header .header-section h2 {
     width: 100%;
-    margin-left: -20%;
+    margin-left: 0%;
     margin-top: 12%;
     font-size: 55px;
+    text-align: center;
   }
 }
 @media (min-width: 1200px) {
   header .header-section h2 {
     font-size: 80px;
-    margin-left: -23%;
+    margin-left: 0%;
+    text-align: center;
   }
 }
 header .header-section img {
